@@ -1,4 +1,4 @@
 darcamo.github.com
 ==================
 
-Gitgub pages
+Github pages
