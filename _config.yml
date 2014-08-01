@@ -6,17 +6,22 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
+title:            Random Thoughts
+tagline:          Because what's written is not lost
 url:              http://getpoole.com
 paginate:         1
-baseurl:          /
+baseurl:          http://darcamo.github.io/
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           Darlan Cavalcante Moreira
+  url:            https://plus.google.com/+DarlanCavalcanteMoreira/
+  email:          darcamo@gmail.com
 
 # Custom vars
 version:          1.0.0
-github:
-  repo:           https://github.com/poole/poole
+github:           https://github.com/darcamo
+  repo:           https://github.com/darcamo/darcamo.github.com
+
+pages_list:       
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'
