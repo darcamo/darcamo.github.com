@@ -428,3 +428,16 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+
+/* xxxxxxxxxx Added by Me xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* kbd tag definition stolen from http://ergoemacs.org/ */
+kbd {
+    padding-left:.25em;
+    padding-right:.25em;
+    font-family:sans-serif;
+    border:solid 1px #c2c2c2;
+    border-radius:4px;
+    background-color:#f0f0f0;
+    box-shadow:1px 1px silver
+}
