@@ -7,5 +7,63 @@ This is the first post I actually write in Jekyll. I decided to start
 writing a blog mainly to have a place where I can put knowledge and random
 thoughts. I imagine many blogs start like this.
 
-This first post is intended to get the Jekyll structure up and learn how it
-integrates with github pages.
+This first post is intended to get the Jekyll running and learn how it
+integrates with github pages. I'm using poole as a starting point.
+
+# Installing Jekyll #
+
+My first try was installing jekyll from the Ubuntu repositories and then
+trying to run `jekyll serve` from the root folder of my poole blog, but
+that didn't work. After that I tried to install jekyll with `gem install
+jekyll`, but I got an error. Installing 'ruby-all-dev' from the Ubuntu and
+then repeting `gem install jekyll` did the job.
+
+# Creating new post #
+
+Simply create a file with a name in the format
+`YYYY-MM-DD-the-tittle-of-your-post.md` in the `_posts` folder. In the
+beginin of the file, add lines below
+
+    ---
+    layout: post
+    title: Tittle of your post
+    ---
+
+and start writting using the Markdown syntax.
+
+I won't enter in details, since there are better places to learn about
+jekyll. A good place is [jekyll own page](http://jekyllrb.com/docs/home/).
+
+
+If you need helo with the markdown syntax,
+[this site](https://daringfireball.net/projects/markdown/syntax) is a good.
+one. If you only need a quick reference,
+[this site](http://www.darkcoding.net/software/markdown-quick-reference/)
+is a good one.
+
+# Defining new HTML tags #
+
+If you want to add new HTML tags that you can use when creating posts, edit
+the `public/css/poole.css' file to add the tag. For instance, I have added
+the tat 'kbd' in 'poole.css' and used extensivelly in the post
+"[Using Ebib to manage Bibtex files]({% post_url 2014-09-06-using-ebib %})"
+to typeset keyboard keys.
+
+# Entering Unicode characters #
+
+You can enter any unicode character in Emacs with <kbd>C-x</kbd>
+<kbd>8</kbd> <kbd>Enter↵</kbd>. Then you need to type the name of the
+unicode character you want to insert (helm mode is very useful here).
+
+A list of common unicode characters is given below
+
+- ↑: UPWARDS ARROW
+- ↓: DOWNWARDS ARROW
+- ←: LEFTWARDS ARROW
+- →: RIGHTWARDS ARROW
+- ↵: DOWNWARDS ARROW WITH CORNER LEFTWARDS
+
+Tip: If you have a unicode character in buffer and you want to know its
+name, use <kbd>C-u</kbd> <kbd>C-x</kbd> <kbd>=</kbd>. Emacs will tell you a
+lot of things about the character, including its name.
+
