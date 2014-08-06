@@ -6,8 +6,8 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Random Thoughts
-tagline:          Because what\'s written is not lost
+title:            Personal Magazine
+tagline:          A place to keep what I learn
 url:              http://getpoole.com
 paginate:         1
 baseurl:          http://darcamo.github.io/
