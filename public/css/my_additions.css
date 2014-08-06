@@ -1,0 +1,17 @@
+
+/* Here I put any new CSS definitions which are not part of what came with
+poole
+
+Note that I have modified '_includes/head.html' to include this css
+file. */
+
+/* kbd tag definition stolen from http://ergoemacs.org/ */
+kbd {
+    padding-left:.25em;
+    padding-right:.25em;
+    font-family:sans-serif;
+    border:solid 1px #c2c2c2;
+    border-radius:4px;
+    background-color:#f0f0f0;
+    box-shadow:1px 1px silver
+}
