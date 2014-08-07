@@ -58,7 +58,7 @@ is a good one.
 If you want to add new HTML tags that you can use when creating posts, edit
 the `public/css/my\_additions.css' file to add the tag. For instance, I have
 added the tat 'kbd' in 'my\_additions.css' and used extensivelly in the post
-"[Using Ebib to manage Bibtex files]({% post_url 2014-09-06-using-ebib %})"
+"[Using Ebib to manage Bibtex files]({% post_url 2014-08-07-using-ebib-to-manage-bibtex-files %})"
 to typeset keyboard keys.
 
 # Entering Unicode characters #
