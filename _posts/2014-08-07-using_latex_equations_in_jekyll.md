@@ -125,7 +125,7 @@ consistent with that was in the original local.js file, from MathJax.
 First let's write an equation using pure latex (with mathbf, instead of
 using the new macros):
 
-\\[\mathbf{y} = \mathbf{H} \mathbf{n} + \mathbf{n}\\]
+\\[\mathbf{y} = \mathbf{H} \mathbf{x} + \mathbf{n}\\]
 
 Now let's write the same equation using the macros:
 
