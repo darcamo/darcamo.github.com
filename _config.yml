@@ -16,6 +16,12 @@ author:
   url:            https://plus.google.com/+DarlanCavalcanteMoreira/
   email:          darcamo@gmail.com
 
+# Github will configure the two values below and we can't change them. Its
+# better to set the same values here to make sure running jekyll locally
+# will be similar to jekyll that Github runs
+safe: true
+lsi: false
+
 # Custom vars
 version:          1.0.0
 github:           https://github.com/darcamo
