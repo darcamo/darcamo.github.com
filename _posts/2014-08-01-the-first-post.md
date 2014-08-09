@@ -12,23 +12,23 @@ integrates with github pages. I'm using poole as a starting point.
 
 # Installing Jekyll #
 
-My first try was installing jekyll from the Ubuntu repositories and then
+My first try was installing Jekyll from the Ubuntu repositories and then
 trying to run `jekyll serve` from the root folder of my poole blog, but
-that didn't work. After that I tried to install jekyll with `gem install
+that didn't work. After that I tried to install Jekyll with `gem install
 jekyll`, but I got an error. Installing 'ruby-all-dev' from the Ubuntu and
 then repeting `gem install jekyll` did the job.
 
-Note that when running jekyll locally to preview posts before committing to
+Note that when running Jekyll locally to preview posts before committing to
 github the command you actually want to use (from the root folder) is
 
     jekyll serve --watch --baseurl ''
 
-The *watch* is very useful when editing posts, since jekyll will
+The *watch* is very useful when editing posts, since Jekyll will
 automatically rebuild the post after it is saved.
 
 The *baseurl* option is important because we have set a baseurl in the
 `_config.yml` file, but we want it to be an empty string when running
-jekyll locally.
+Jekyll locally.
 
 # Creating new post #
 
@@ -44,7 +44,7 @@ beginin of the file, add lines below
 and start writting using the Markdown syntax.
 
 I won't enter in details, since there are better places to learn about
-jekyll. A good place is [jekyll own page](http://jekyllrb.com/docs/home/).
+Jekyll. A good place is [Jekyll's own page](http://jekyllrb.com/docs/home/).
 
 
 If you need helo with the markdown syntax,

@@ -5,12 +5,12 @@ title: Using Latex Equations in Jekyll
 
 Nowadays the standard way to add latex equations in HTML is
 [MathJax](http://www.mathjax.org/), which is an awesome JavaScript
-library. To use it in jekyll, all we need to to is adding the MathJax script
+library. To use it in Jekyll, all we need to to is adding the MathJax script
 to our `_include/head.html` file after the tittle tag.
 
 The post
 [How to get beautifully typeset maths on your blog](http://checkmyworking.com/2012/01/how-to-get-beautifully-typeset-maths-on-your-blog/)
-explains how to do it for several blog systems. Since jekyll qualifies as
+explains how to do it for several blog systems. Since Jekyll qualifies as
 the *I have my own setup* case the provided code to add to our `head.html`
 file is
 
@@ -83,7 +83,7 @@ Mathjax. Instead of adding the code from before, add the code below to
   ```
 
 Only the `src` line changed, when compared with the previous version. Also,
-replace `SITEBASEURL` with the correct jekyll variable for that.
+replace `SITEBASEURL` with the correct Jekyll variable for that.
 
 Regarding the actual content of the `mymathjaxdefs.js` file, I started by
 copying the content of the `config/local/local.js` file from MathJax and
@@ -116,7 +116,7 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
 MathJax.Ajax.loadComplete("{{ site.baseurl }}/public/javascripts/mymathjaxdefs.js");
 ```
 
-Again, replace `SITEBASEURL` with the correct jekyll variable for
+Again, replace `SITEBASEURL` with the correct Jekyll variable for
 that. Although I'm not sure if this last line is important. I tried to be
 consistent with that was in the original local.js file, from MathJax.
 
