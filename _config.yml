@@ -10,6 +10,7 @@ title:            Personal Magazine
 tagline:          A place to keep what I learn
 url:              http://getpoole.com
 paginate:         1
+exclude:          _drafts/README.txt
 baseurl:          http://darcamo.github.io/
 author:
   name:           Darlan Cavalcante Moreira

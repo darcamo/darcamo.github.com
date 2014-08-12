@@ -1,0 +1,31 @@
+#+TITLE:Testing Org-mode Export to Markdown
+#+AUTHOR:Darlan Cavalcante Moreira
+#+EMAIL:darcamo@gmail.com
+#+SETUPFILE: ~/.emacs.d/lisp/org-setup-file-template/setup.org
+#+MACRO: layout post
+
+#+BEGIN_HTML
+---
+layout: {{{layout}}}
+title: {{{TITLE}}}
+---
+#+END_HTML
+
+This file is intended to test creating posts with org-mode.  I'll add stuff
+here to test different functionalities, such as including images, adding
+links, exporting babel results, etc..
+
+You need to configure =org-publish-project-alist= correctly and the export
+you project. This should copy the exported HTML file to the correct folder
+that jekyll reads.
+
+See this link http://orgmode.org/worg/org-tutorials/org-jekyll.html
+
+* Some Header
+
+  Some text here
+
+  Below we have a python block with exports the code and the result
+  #+begin_src python :exports both :results output
+  import this
+  #+end_src
