@@ -1,0 +1,71 @@
+#+TITLE:Point Processes
+#+AUTHOR:Darlan Cavalcante Moreira
+#+EMAIL:darcamo@gmail.com
+#+SETUPFILE: ~/.emacs.d/lisp/org-setup-file-template/setup.org
+#+MACRO: layout post
+
+
+#+BEGIN_HTML
+---
+layout: {{{layout}}}
+title: {{{TITLE}}}
+---
+#+END_HTML
+
+Consider the \(d\) dimensional Euclidean space \(\bbR^d\). A spacial point
+process (p.p.) \(\Phi\) is a random, finite or countably-infinity
+collection of points in the space \(\bbR^d\), without accumulation points.
+
+
+One can consider any given realization \(\phi\) of a point process as a
+discrete subset \(\phi = \{x_i\} \subset \bbR^d\) of the space. It is often
+more convenient to think of \(\phi\) as a /counting measure/ or a /point
+measure/ \(\phi = \sum_{i}\delta_{x_i}\), where \(\delta_{x}\) is the
+/Dirac measure/ at \(x\)[fn:1].
+
+
+More specifically, for a set \(\bbA \subset \bbR^d\) the value of
+\(\phi(\bbA)\) will be the number of "points" of \(\phi\) in \(\bbA\).
+
+
+* Examples
+
+\(\mathbf{y} = c \mathbf{x}\)
+
+\(\Vt{x} = 2 * 3\)
+  
+
+#+begin_example
+  <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML,file:///home/darlan/Dropbox/MathJax-2.4-latest/config/local/local.js">
+  </script>
+#+end_example
+
+
+  
+
+
+* Other definitions
+  - *simple*: point process is known as simple if XXXXXXXXXXXX
+  - *expectation measure*: 
+  - *Laplace functional*: 
+  - *moment measure*:
+  - *Stationarity*: For a stationary point process, the mean measure 
+    \(E\{\phi (\cdot)\} = \lambda \|\cdot\|\) for some constant \(\lambda \geq 0\)
+    and where \(\|\cdot\|\) stands for the *Lebesgue measure*[fn:2]. This
+    \(\lambda\) is called the *intensity* of the point process. A
+    stationary point process on \(\bbR^d\) has almost surely either 0 or an
+    infinite number of points in total.
+
+
+
+* Footnotes
+
+[fn:1] If \(\delta_{x}\) is the Diract measure at \(x\) then \(\delta_{x}(\bbA) = 1\) if \(x \in \bbA\) and \(\delta_{x}(\bbA) = 0\) if \(x \notin \bbA\).
+
+[fn:2] The Lebesgue measure is the standard way of assigning a measure to
+subsets of n-dimensional Euclidean space. For \(n = 1, 2\), or \(3\), it coincides
+with the standard measure of length, area, or volume. In general, it is
+also called \(n\)-dimensional volume, n-volume, or simply volume.[1]
+
+
