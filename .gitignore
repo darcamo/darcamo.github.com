@@ -1,2 +1,6 @@
 /_site/
 /_drafts/*.html
+ltxpng/
+/org/drafts/*.html
+/org/drafts/*.pdf
+/org/drafts/*.tex
