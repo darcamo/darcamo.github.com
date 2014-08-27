@@ -63,4 +63,7 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
     TEX.Macro("mtZ","\\Mt{Z}");
 });
 
-MathJax.Ajax.loadComplete("{{ site.baseurl }}/public/javascripts/mymathjaxdefs.js");
+// Because this file will be used both when the post is read in github
+// pages as well as when I run Jekyll locally, then I add this line twice.
+MathJax.Ajax.loadComplete("/public/javascripts/mymathjaxdefs.js");
+MathJax.Ajax.loadComplete("http://darcamo.github.io/public/javascripts/mymathjaxdefs.js");

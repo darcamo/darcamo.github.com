@@ -78,12 +78,13 @@ Mathjax. Instead of adding the code from before, add the code below to
     displayMath: [['\\[','\\]'], ['$$','$$']]}});
 </script>
 <script type="text/javascript"
-          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,SITEBASEURL/public/javascripts/mymathjaxdefs.js">
+          src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,{SITEBASEURL}public/javascripts/mymathjaxdefs.js">
   </script>
   ```
 
 Only the `src` line changed, when compared with the previous version. Also,
-replace `SITEBASEURL` with the correct Jekyll variable for that.
+replace `{SITEBASEURL}` with the correct Jekyll variable for that
+(including the engind '/' character).
 
 Regarding the actual content of the `mymathjaxdefs.js` file, I started by
 copying the content of the `config/local/local.js` file from MathJax and
@@ -116,7 +117,7 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
 MathJax.Ajax.loadComplete("{{ site.baseurl }}/public/javascripts/mymathjaxdefs.js");
 ```
 
-Again, replace `SITEBASEURL` with the correct Jekyll variable for
+Again, replace `{SITEBASEURL}` with the correct Jekyll variable for
 that. Although I'm not sure if this last line is important. I tried to be
 consistent with that was in the original local.js file, from MathJax.
 

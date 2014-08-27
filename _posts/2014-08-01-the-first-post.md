@@ -21,7 +21,7 @@ then repeting `gem install jekyll` did the job.
 Note that when running Jekyll locally to preview posts before committing to
 github the command you actually want to use (from the root folder) is
 
-    jekyll serve --watch --baseurl ''
+    jekyll serve --watch --baseurl '/'
 
 The *watch* is very useful when editing posts, since Jekyll will
 automatically rebuild the post after it is saved.
