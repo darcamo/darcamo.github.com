@@ -61,6 +61,34 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
     TEX.Macro("mtX","\\Mt{X}");
     TEX.Macro("mtY","\\Mt{Y}");
     TEX.Macro("mtZ","\\Mt{Z}");
+
+    // Sets
+    TEX.Macro("bbA","\\mathbb{A}");
+    TEX.Macro("bbB","\\mathbb{B}");
+    TEX.Macro("bbC","\\mathbb{C}");
+    TEX.Macro("bbD","\\mathbb{D}");
+    TEX.Macro("bbE","\\mathbb{E}");
+    TEX.Macro("bbF","\\mathbb{F}");
+    TEX.Macro("bbG","\\mathbb{G}");
+    TEX.Macro("bbH","\\mathbb{H}");
+    TEX.Macro("bbI","\\mathbb{I}");
+    TEX.Macro("bbJ","\\mathbb{J}");
+    TEX.Macro("bbK","\\mathbb{K}");
+    TEX.Macro("bbL","\\mathbb{L}");
+    TEX.Macro("bbM","\\mathbb{M}");
+    TEX.Macro("bbN","\\mathbb{N}");
+    TEX.Macro("bbO","\\mathbb{P}");
+    TEX.Macro("bbP","\\mathbb{P}");
+    TEX.Macro("bbQ","\\mathbb{Q}");
+    TEX.Macro("bbR","\\mathbb{R}");
+    TEX.Macro("bbS","\\mathbb{S}");
+    TEX.Macro("bbT","\\mathbb{T}");
+    TEX.Macro("bbU","\\mathbb{U}");
+    TEX.Macro("bbV","\\mathbb{V}");
+    TEX.Macro("bbW","\\mathbb{W}");
+    TEX.Macro("bbX","\\mathbb{X}");
+    TEX.Macro("bbY","\\mathbb{Y}");
+    TEX.Macro("bbZ","\\mathbb{Z}");
 });
 
 // Because this file will be used both when the post is read in github
