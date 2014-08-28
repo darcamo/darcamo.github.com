@@ -10,6 +10,14 @@ title: Point Processes
 ---
 #+END_HTML
 
+
+Alguns lugares usam \(\phi\) para denotar o point processes, outros usam
+\(\xi\).
+
+
+
+* What is a Point process
+
 Consider the \(d\) dimensional Euclidean space \(\bbR^d\). A spacial point
 process (p.p.) \(\Phi\) is a random, finite or countably-infinity
 collection of points in the space \(\bbR^d\), without accumulation points.
@@ -26,13 +34,76 @@ More specifically, for a set \(\bbA \subset \bbR^d\) the value of
 \(\phi(\bbA)\) will be the number of "points" of \(\phi\) in \(\bbA\).
 
 
-* Examples
 
+In the study of processes subject to randomness, one is interested in doing
+statistical inference over such process.  One classical approach is
+likelihood estimation of parameters of interest. Note that inference for
+stochastic processes, in particular, for point processes differs clearly
+from the approach of classical inference based on a sample of size n,
+i.e. n i.i.d. random variables. In the case of point processes we do not
+have a sequence of realizations of the point process on which to base the
+inference, but only a unique realization of the process.
+
+* Poisson Point Process
+
+  One of the simplest processes and most interesting is the so called
+  Poisson Process. The Poisson processes is used usually as a model for
+  counting problems. Suppose that we are counting the number of events
+  falling into a certain region of the space. Assume that: the number of
+  events in distinct regions of the space are independent and the number of
+  points in a certain region of the space has a Poisson distribution, then
+  the process obtained is called a Poisson process.
+
+
+  - Definition :: Let v(.) be a Borel measure on K, then a point process X on K is a Poisson point process with intensity v(.) if :
+  N(A) is Poisson distributed with mean v(A) for every bouned Borel set A
+  included in K, For any k disjoint bounded Borel set A1,...,Ak the random
+  variables N(A1),...,N(Ak) are independent.
+
+  The intensity measure of the Poisson point process is proportional to the
+  Lebesgue measure on K:
+      
+      \[v(.) = \beta \lambda_K(.)\]
+
+  The mean number of points falling in K is then:
   
+      \[\E[N(K)] = \beta \lambda_K(K)\]
 
+  To generate points in K with the distribution of this point process a two
+  step procedure can be used :
+  - First simulate N according to a Poisson law with mean given by the
+    latter equation (it gives N=n),
+  - Then sample each of the n point according to a uniform law on K.
+
+    
+  This enhance the fundamental properties of the uniform Poisson point
+  process:
+  - Points are uniformly distibuted, knowing the number of points,
+  - Points are independent.
+
+
+*** Properties
+    A homogeneous Poisson process X with constant intensity λ0 (number of
+    points per unit area) has two properties :
+    1. the density of points is constant in the area under investigation
+    2. the location of any point in the pattern is independent of the
+       location of any of the other points in the pattern, i.e. there is no
+       interaction between the points
+       
+    Let \(\mu\) be the Lebesgue measure on the Borel sets in S. Then the
+    Poisson process on S with intensity \(\lambda_0\) has the properties :
+    1. For any Borel set \(B \in S\) the cardinality of \(B\), \(X(B)\),
+       follows a Poisson distribution with mean \(\lambda_0 \cdot \mu(B)\).
+    2. For any disjoint Borel sets \(B_1, \ldots, B_{n0} \subseteq S\) with
+       an arbitrary \(n_0 \geq 2\), \(X(B1), \ldots, X(B_{n0})\) are
+       independent.
 
 * Other definitions
-  - *simple*: point process is known as simple if XXXXXXXXXXXX
+  - *simple*: point process is known as simple if all points are almost
+    surely distinct. As an example, consider a temporal point processes, in
+    that case if will be called a /simple point process/ if all points
+    occur at distinct
+
   - *expectation measure*: 
   - *Laplace functional*: 
   - *moment measure*:
@@ -42,9 +113,33 @@ More specifically, for a set \(\bbA \subset \bbR^d\) the value of
     \(\lambda\) is called the *intensity* of the point process. A
     stationary point process on \(\bbR^d\) has almost surely either 0 or an
     infinite number of points in total.
+  - Compact set: a set if /compact/ if it is /closed/ and /bounded/.
+  - Accumulation point: limit point of an interval
+  - Borel set: a Borel set is any set in a topological space that can be
+    formed from open sets (or, equivalently, from closed sets) through the
+    operations of countable union, countable intersection, and relative
+    complement.
+  - marked point process: The points of a point process are typically
+    indistinguishable other than by their times and/or locations. When
+    there is other important information to be stored along with each
+    point, such as a list of times of wildfire origin times along with
+    their corresponding burn areas, or the earthquake times and magnitudes
+    shown in Figure 1, the result may be viewed as a /marked/ point
+    process.
+  - martingale: In probability theory, a martingale is a model of a fair
+    game where knowledge of past events never helps predict the mean of the
+    future winnings. In particular, a martingale is a sequence of random
+    variables (i.e., a stochastic process) for which, at a particular time
+    in the realized sequence, the expectation of the next value in the
+    sequence is equal to the present observed value even given knowledge of
+    all prior observed values at a current time.
 
-
-
+    A basic definition of a discrete-time martingale is a discrete-time
+    stochastic process (i.e., a sequence of random variables) \(X_1, X_2,
+    X_3, \ldots\) that satisfies for any time \(n\),
+    \[\mathbf{E} ( \vert X_n \vert )< \infty\]
+    \[\mathbf{E} (X_{n+1}\mid X_1,\ldots,X_n)=X_n.\]
+    
 * Footnotes
 
 [fn:1] If \(\delta_{x}\) is the Diract measure at \(x\) then \(\delta_{x}(\bbA) = 1\) if \(x \in \bbA\) and \(\delta_{x}(\bbA) = 0\) if \(x \notin \bbA\).
