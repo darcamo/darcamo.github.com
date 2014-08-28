@@ -3,6 +3,10 @@
 MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
     var TEX = MathJax.InputJax.TeX;
 
+    // General macros
+    TEX.Macro("E","\\mathbb{E}");  // Expectation
+    TEX.Macro("rank","\\operatorname{rank}");  // rank (of a matrix)
+    
     // place macros here.  E.g.:
     TEX.Macro("Mt","\\mathbf{#1}",1); // A macro with 1 parameter
     TEX.Macro("Vt","\\mathbf{#1}",1);  // A macro with 1 parameter
