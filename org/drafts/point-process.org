@@ -98,10 +98,18 @@ inference, but only a unique realization of the process.
        an arbitrary \(n_0 \geq 2\), \(X(B1), \ldots, X(B_{n0})\) are
        independent.
 
+
+* Transformations
+
+  - superposition :: overlap points of one process onto those of another
+                     point process
+  - thinning :: delete certain points
+  - rescaling :: stretching the axis
+
 * Other definitions
   - *simple*: point process is known as simple if all points are almost
     surely distinct. As an example, consider a temporal point processes, in
-    that case if will be called a /simple point process/ if all points
+    that case it will be called a /simple point process/ if all points
     occur at distinct
 
   - *expectation measure*: 
@@ -109,7 +117,7 @@ inference, but only a unique realization of the process.
   - *moment measure*:
   - *Stationarity*: For a stationary point process, the mean measure 
     \(E\{\phi (\cdot)\} = \lambda \|\cdot\|\) for some constant \(\lambda \geq 0\)
-    and where \(\|\cdot\|\) stands for the *Lebesgue measure*[fn:2]. This
+    and where \(\|\cdot\|\) stands for the *Lebesgue* measure[fn:2]. This
     \(\lambda\) is called the *intensity* of the point process. A
     stationary point process on \(\bbR^d\) has almost surely either 0 or an
     infinite number of points in total.
@@ -139,6 +147,18 @@ inference, but only a unique realization of the process.
     X_3, \ldots\) that satisfies for any time \(n\),
     \[\mathbf{E} ( \vert X_n \vert )< \infty\]
     \[\mathbf{E} (X_{n+1}\mid X_1,\ldots,X_n)=X_n.\]
+
+  - compensator: xxxxxxxxxxxxx
+
+  - /self-exciting/ and /self-correcting/ point processes: A point process
+    N may be called self-exciting if \(\operatorname{cov}\{N(s,t), N(t,u)\}
+    > 0\) for \(s < t < u\). N is self-correcting if instead this
+    covariance is negative. Thus the occurrence of points in a
+    self-exciting point process causes other points to be more likely to
+    occur, whereas in a self-correcting process, the points have an
+    inhibitory effect. By definition, a Poisson process is neither
+    self-exciting nor self-correcting.
+
     
 * Footnotes
 
