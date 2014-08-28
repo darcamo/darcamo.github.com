@@ -2,12 +2,11 @@
 #+AUTHOR:Darlan Cavalcante Moreira
 #+EMAIL:darcamo@gmail.com
 #+SETUPFILE: ~/.emacs.d/lisp/org-setup-file-template/setup.org
-#+MACRO: layout post
 
 #+BEGIN_HTML
 ---
-layout: {{{layout}}}
-title: {{{TITLE}}}
+layout: post
+title: Testing Org-mode Export to Markdown
 ---
 #+END_HTML
 

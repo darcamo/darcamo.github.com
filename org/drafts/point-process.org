@@ -2,13 +2,11 @@
 #+AUTHOR:Darlan Cavalcante Moreira
 #+EMAIL:darcamo@gmail.com
 #+SETUPFILE: ~/.emacs.d/lisp/org-setup-file-template/setup.org
-#+MACRO: layout post
-
 
 #+BEGIN_HTML
 ---
-layout: {{{layout}}}
-title: {{{TITLE}}}
+layout: post
+title: Point Processes
 ---
 #+END_HTML
 
@@ -29,18 +27,6 @@ More specifically, for a set \(\bbA \subset \bbR^d\) the value of
 
 
 * Examples
-
-\(\mathbf{y} = c \mathbf{x}\)
-
-\(\Vt{x} = 2 * 3\)
-  
-
-#+begin_example
-  <script type="text/javascript"
-     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML,file:///home/darlan/Dropbox/MathJax-2.4-latest/config/local/local.js">
-  </script>
-#+end_example
-
 
   
 
@@ -63,9 +49,6 @@ More specifically, for a set \(\bbA \subset \bbR^d\) the value of
 
 [fn:1] If \(\delta_{x}\) is the Diract measure at \(x\) then \(\delta_{x}(\bbA) = 1\) if \(x \in \bbA\) and \(\delta_{x}(\bbA) = 0\) if \(x \notin \bbA\).
 
-[fn:2] The Lebesgue measure is the standard way of assigning a measure to
-subsets of n-dimensional Euclidean space. For \(n = 1, 2\), or \(3\), it coincides
-with the standard measure of length, area, or volume. In general, it is
-also called \(n\)-dimensional volume, n-volume, or simply volume.[1]
+[fn:2] The Lebesgue measure is the standard way of assigning a measure to subsets of n-dimensional Euclidean space. For \(n = 1, 2\), or \(3\), it coincides with the standard measure of length, area, or volume. In general, it is also called \(n\)-dimensional volume, n-volume, or simply volume.
 
 
