@@ -25,9 +25,9 @@ collection of points in the space \(\bbR^d\), without accumulation points.
 
 One can consider any given realization \(\phi\) of a point process as a
 discrete subset \(\phi = \{x_i\} \subset \bbR^d\) of the space. It is often
-more convenient to think of \(\phi\) as a /counting measure/ or a /point
-measure/ \(\phi = \sum_{i}\delta_{x_i}\), where \(\delta_{x}\) is the
-/Dirac measure/ at \(x\)[fn:1].
+more convenient to think of \(\phi\) as a *counting measure* or a *point
+measure* \(\phi = \sum_{i}\delta_{x_i}\), where \(\delta_{x}\) is the
+*Dirac measure* at \(x\)[fn:1].
 
 
 More specifically, for a set \(\bbA \subset \bbR^d\) the value of
@@ -39,33 +39,36 @@ In the study of processes subject to randomness, one is interested in doing
 statistical inference over such process.  One classical approach is
 likelihood estimation of parameters of interest. Note that inference for
 stochastic processes, in particular, for point processes differs clearly
-from the approach of classical inference based on a sample of size n,
-i.e. n i.i.d. random variables. In the case of point processes we do not
-have a sequence of realizations of the point process on which to base the
-inference, but only a unique realization of the process.
+from the approach of classical inference based on a sample of size \(n\),
+i.e. \(n\) i.i.d. random variables. In the case of point processes we do
+not have a sequence of realizations of the point process on which to base
+the inference, but only a unique realization of the process.
 
 * Poisson Point Process
 
-  One of the simplest processes and most interesting is the so called
-  Poisson Process. The Poisson processes is used usually as a model for
-  counting problems. Suppose that we are counting the number of events
-  falling into a certain region of the space. Assume that: the number of
-  events in distinct regions of the space are independent and the number of
-  points in a certain region of the space has a Poisson distribution, then
-  the process obtained is called a Poisson process.
+  One of the simplest and most interesting point processes is the so called
+  *Poisson Point Process*. Poisson point processes are used usually as a
+  model for counting problems. Suppose that we are counting the number of
+  events falling into a certain region of the space. Assume that: the
+  number of events in distinct regions of the space are independent and the
+  number of points in a certain region of the space has a Poisson
+  distribution, then the process obtained is called a Poisson process.
 
-
-  - Definition :: Let v(.) be a Borel measure on K, then a point process X on K is a Poisson point process with intensity v(.) if :
-  N(A) is Poisson distributed with mean v(A) for every bouned Borel set A
-  included in K, For any k disjoint bounded Borel set A1,...,Ak the random
-  variables N(A1),...,N(Ak) are independent.
+  - Definition :: Let \(v(\cdot)\) be a /Borel measure/ on \(K\), then a
+                  point process \(X\) on \(\bbK\) is a Poisson point
+                  process with intensity \(v(\cdot)\) if : \(N(\bbA)\) is
+                  Poisson distributed with mean \(v(\bbA)\) for every
+                  bounded Borel set \(\bbA\) included in \(\bbK\), For any
+                  \(k\) disjoint bounded Borel set \(\bbA_1,\ldots,\bbA_k\)
+                  the random variables \(N(\bbA_1),\ldots,N(\bbA_k)\) are
+                  independent.
 
   The intensity measure of the Poisson point process is proportional to the
-  Lebesgue measure on K:
+  Lebesgue measure on \(K\):
       
       \[v(.) = \beta \lambda_K(.)\]
 
-  The mean number of points falling in K is then:
+  The /mean number of points/ falling in \(K\) is then:
   
       \[\E[N(K)] = \beta \lambda_K(K)\]
 
@@ -91,7 +94,7 @@ inference, but only a unique realization of the process.
        interaction between the points
        
     Let \(\mu\) be the Lebesgue measure on the Borel sets in S. Then the
-    Poisson process on S with intensity \(\lambda_0\) has the properties :
+    Poisson process onS  with intensity \(\lambda_0\) has the properties :
     1. For any Borel set \(B \in S\) the cardinality of \(B\), \(X(B)\),
        follows a Poisson distribution with mean \(\lambda_0 \cdot \mu(B)\).
     2. For any disjoint Borel sets \(B_1, \ldots, B_{n0} \subseteq S\) with
@@ -106,64 +109,68 @@ inference, but only a unique realization of the process.
   - thinning :: delete certain points
   - rescaling :: stretching the axis
 
-* Other definitions
-  - *simple*: point process is known as simple if all points are almost
-    surely distinct. As an example, consider a temporal point processes, in
-    that case it will be called a /simple point process/ if all points
-    occur at distinct
+* General Definitions
+  - Lebesgue measure :: The Lebesgue measure is the standard way of
+       assigning a measure to subsets of \(n\)-dimensional Euclidean space. For
+       \(n = 1, 2\), or \(3\), it coincides with the standard measure of
+       length, area, or volume. In general, it is also called
+       \(n\)-dimensional volume, \(n\)-volume, or simply volume.
+  - simple :: point process is known as /simple/ if all points are almost
+              surely distinct. As an example, consider a temporal point
+              processes, in that case it will be called a /simple point
+              process/ if all points occur at distinct times
+  - expectation measure :: TODO: Write this
+  - Laplace functional :: TODO: Write this
+  - moment measure :: TODO: Write this
+  - Stationarity :: For a stationary point process, the mean measure
+                    \(E\{\phi (\cdot)\} = \lambda \|\cdot\|\) for some
+                    constant \(\lambda \geq 0\) and where \(\|\cdot\|\)
+                    stands for the *Lebesgue measure*. This
+                    \(\lambda\) is called the *intensity* of the point
+                    process. A stationary point process on \(\bbR^d\) has
+                    almost surely either 0 or an infinite number of points
+                    in total.
+  - Compact set :: a set if /compact/ if it is /closed/ and /bounded/.
+  - Accumulation point :: limit point of an interval
+  - Borel set :: a Borel set is any set in a topological space that can be
+                 formed from open sets (or, equivalently, from closed sets)
+                 through the operations of countable union, countable
+                 intersection, and relative complement.
+  - marked point process :: The points of a point process are typically
+       indistinguishable other than by their times and/or locations. When
+       there is other important information to be stored along with each
+       point, such as a list of times of wildfire origin times along with
+       their corresponding burn areas, or the earthquake times and
+       magnitudes shown in Figure 1, the result may be viewed as a /marked/
+       point process.
+  - martingale :: In probability theory, a martingale is a model of a fair
+                  game where knowledge of past events never helps predict
+                  the mean of the future winnings. In particular, a
+                  martingale is a sequence of random variables (i.e., a
+                  stochastic process) for which, at a particular time in
+                  the realized sequence, the expectation of the next value
+                  in the sequence is equal to the present observed value
+                  even given knowledge of all prior observed values at a
+                  current time.
 
-  - *expectation measure*: 
-  - *Laplace functional*: 
-  - *moment measure*:
-  - *Stationarity*: For a stationary point process, the mean measure 
-    \(E\{\phi (\cdot)\} = \lambda \|\cdot\|\) for some constant \(\lambda \geq 0\)
-    and where \(\|\cdot\|\) stands for the *Lebesgue* measure[fn:2]. This
-    \(\lambda\) is called the *intensity* of the point process. A
-    stationary point process on \(\bbR^d\) has almost surely either 0 or an
-    infinite number of points in total.
-  - Compact set: a set if /compact/ if it is /closed/ and /bounded/.
-  - Accumulation point: limit point of an interval
-  - Borel set: a Borel set is any set in a topological space that can be
-    formed from open sets (or, equivalently, from closed sets) through the
-    operations of countable union, countable intersection, and relative
-    complement.
-  - marked point process: The points of a point process are typically
-    indistinguishable other than by their times and/or locations. When
-    there is other important information to be stored along with each
-    point, such as a list of times of wildfire origin times along with
-    their corresponding burn areas, or the earthquake times and magnitudes
-    shown in Figure 1, the result may be viewed as a /marked/ point
-    process.
-  - martingale: In probability theory, a martingale is a model of a fair
-    game where knowledge of past events never helps predict the mean of the
-    future winnings. In particular, a martingale is a sequence of random
-    variables (i.e., a stochastic process) for which, at a particular time
-    in the realized sequence, the expectation of the next value in the
-    sequence is equal to the present observed value even given knowledge of
-    all prior observed values at a current time.
+                  A basic definition of a discrete-time martingale is a
+                  discrete-time stochastic process (i.e., a sequence of
+                  random variables) \(X_1, X_2, X_3, \ldots\) that
+                  satisfies for any time \(n\), 
 
-    A basic definition of a discrete-time martingale is a discrete-time
-    stochastic process (i.e., a sequence of random variables) \(X_1, X_2,
-    X_3, \ldots\) that satisfies for any time \(n\),
-    \[\mathbf{E} ( \vert X_n \vert )< \infty\]
-    \[\mathbf{E} (X_{n+1}\mid X_1,\ldots,X_n)=X_n.\]
-
-  - compensator: xxxxxxxxxxxxx
-
-  - /self-exciting/ and /self-correcting/ point processes: A point process
-    N may be called self-exciting if \(\operatorname{cov}\{N(s,t), N(t,u)\}
-    > 0\) for \(s < t < u\). N is self-correcting if instead this
-    covariance is negative. Thus the occurrence of points in a
-    self-exciting point process causes other points to be more likely to
-    occur, whereas in a self-correcting process, the points have an
-    inhibitory effect. By definition, a Poisson process is neither
-    self-exciting nor self-correcting.
+                  \[\mathbf{E} ( \vert X_n \vert )< \infty\] 
+                  \[\mathbf{E} (X_{n+1}\mid X_1,\ldots,X_n)=X_n.\]
+  - compensator :: TODO: Write this
+  - /self-exciting/ and /self-correcting/ point processes :: A point
+       process N may be called self-exciting if
+       \(\operatorname{cov}\{N(s,t), N(t,u)\} > 0\) for \(s < t < u\). N is
+       self-correcting if instead this covariance is negative. Thus the
+       occurrence of points in a self-exciting point process causes other
+       points to be more likely to occur, whereas in a self-correcting
+       process, the points have an inhibitory effect. By definition, a
+       Poisson process is neither self-exciting nor self-correcting.
 
     
 * Footnotes
 
 [fn:1] If \(\delta_{x}\) is the Diract measure at \(x\) then \(\delta_{x}(\bbA) = 1\) if \(x \in \bbA\) and \(\delta_{x}(\bbA) = 0\) if \(x \notin \bbA\).
-
-[fn:2] The Lebesgue measure is the standard way of assigning a measure to subsets of n-dimensional Euclidean space. For \(n = 1, 2\), or \(3\), it coincides with the standard measure of length, area, or volume. In general, it is also called \(n\)-dimensional volume, n-volume, or simply volume.
-
-
